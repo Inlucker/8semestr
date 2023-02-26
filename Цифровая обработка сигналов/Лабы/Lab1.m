@@ -41,7 +41,7 @@ plot(t, rect_discrete, '.m');
 legend('Исходная', 'Восстановленная', 'Дискретная');
 
 subplot(2,1,2);
-title('Гауссовский фильтр');
+title('Сигнал Гауссовский');
 hold on;
 grid on;
 plot(x, gauss_ref, 'k');
