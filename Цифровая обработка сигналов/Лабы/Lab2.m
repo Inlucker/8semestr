@@ -32,28 +32,28 @@ zg2 = fftshift(zx2);
 
 M = 0:length(t)-1;
 
-f1 = figure (1);
-f1.Position = [180 520 560 420];
-plot(M,abs(yx1)/length(M),'r',M,abs(yg1)/length(M),'black');
-title('FFT: амплитудный спектр прямоугольного импульса');
-legend('С эффектом близнецов','Без эффекта близнецов');
-
-f2 = figure(2);
-f2.Position = [740 520 560 420];
-plot(M,abs(yx2)/length(M),'r',M,abs(yg2)/length(M),'black');
-title('FFT: амплитудный спектр Гауссова импульса');
-legend('С эффектом близнецов','Без эффекта близнецов');
-
 f3 = figure(3);
-f3.Position = [180 100 560 420];
+f3.Position = [180 25 560 420];
 plot(M,abs(zx1)/length(M),'r',M,abs(zg1)/length(M),'black');
 title('DFT: амплитудный спектр прямоугольного импульса');
 legend('С эффектом близнецов','Без эффекта близнецов');
 
 f4 = figure (4);
-f4.Position = [740 100 560 420];
+f4.Position = [740 25 560 420];
 plot(M,abs(zx2)/length(M),'r',M,abs(zg2)/length(M),'black');
 title('DFT: амплитудный спектр Гауссова импульса');
+legend('С эффектом близнецов','Без эффекта близнецов');
+
+f1 = figure (1);
+f1.Position = [180 445 560 420];
+plot(M,abs(yx1)/length(M),'r',M,abs(yg1)/length(M),'black');
+title('FFT: амплитудный спектр прямоугольного импульса');
+legend('С эффектом близнецов','Без эффекта близнецов');
+
+f2 = figure(2);
+f2.Position = [740 445 560 420];
+plot(M,abs(yx2)/length(M),'r',M,abs(yg2)/length(M),'black');
+title('FFT: амплитудный спектр Гауссова импульса');
 legend('С эффектом близнецов','Без эффекта близнецов');
 end
 
