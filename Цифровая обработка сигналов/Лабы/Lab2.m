@@ -17,15 +17,21 @@ x1(abs(t) == T) = 0.5;
 x2 = A * exp(-(t/sigma).^2);
 
 % FFT
+disp("FFT: ")
+tic
 yx1 = fft(x1);
 yx2 = fft(x2);
+toc
 
 yg1 = fftshift(yx1);
 yg2 = fftshift(yx2);
 
 % DFT
+disp("DFT: ")
+tic
 zx1 = dft(x1);
 zx2 = dft(x2);
+toc
 
 zg1 = fftshift(zx1);
 zg2 = fftshift(zx2);
