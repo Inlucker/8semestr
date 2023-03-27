@@ -1,0 +1,143 @@
+\documentclass[14pt,a4paper,oneside]{extreport}			% 14 шрифт, стандартная A4 бумага
+
+\usepackage{tgtermes}									% Использование Times New Roman
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+
+\usepackage{tocloft}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{mwe}
+\graphicspath{ {img/} }
+
+\usepackage{geometry}									% Задание отступов (1/3/2/2)
+\geometry{right=1cm}
+\geometry{left=3cm}
+\geometry{bottom=2cm}
+\geometry{top=2cm}
+
+\usepackage{amsmath}
+\usepackage{mathptmx}
+
+\usepackage{textgreek}
+\usepackage{algpseudocode}
+
+\usepackage{algorithm}
+\renewcommand{\listalgorithmname}{Список алгоритмов}
+\floatname{algorithm}{Алгоритм}
+
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{float}
+\DeclarePairedDelimiter\bra{\langle}{\rvert}
+\DeclarePairedDelimiter\ket{\lvert}{\rangle}
+\DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1 \delimsize\vert #2}
+\onehalfspacing % Полуторный интервал
+\frenchspacing
+
+\usepackage{float}		% Чтобы не съезжали изображения
+
+\usepackage{indentfirst} % Красная строка
+\usepackage{titlesec}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinestyle{python}{
+    language=Python,
+    backgroundcolor=\color{white},
+    basicstyle=\footnotesize\ttfamily,
+    keywordstyle=\color{purple},
+    stringstyle=\color{green},
+    commentstyle=\color{gray},
+    numbers=left,
+    stepnumber=0.5,
+    numbersep=5pt,
+    frame=single,
+    tabsize=4,
+    captionpos=t,
+    breaklines=true,
+    breakatwhitespace=true,
+    escapeinside={\#*}{*)},
+    morecomment=[l][\color{magenta}]{\#},
+    columns=fullflexible
+}
+
+\usepackage[justification=centering]{caption} % Настройка подписей float объектов
+\usepackage[unicode,pdftex]{hyperref} % Ссылки в pdf
+\hypersetup{hidelinks}
+\newcommand{\code}[1]{\texttt{#1}}
+
+\usepackage{color} %use color
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+	backgroundcolor=\color{white},
+	basicstyle=\footnotesize, 
+	breakatwhitespace=false, 
+	breaklines=true, 
+	captionpos=b, 
+	commentstyle=\color{mygreen},
+	deletekeywords={...}, 
+	escapeinside={\%*}{*)}, 
+	extendedchars=true,
+	frame=single, 
+	keepspaces=true,
+	keywordstyle=\color{blue},
+	morekeywords={*,...}, 
+	numbers=left, 
+	numbersep=5pt, 
+	numberstyle=\tiny\color{mygray},
+	rulecolor=\color{black}, 
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	stepnumber=1,
+	stringstyle=\color{mymauve}, 
+	tabsize=2,
+	title=\lstname
+}
+
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+	
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{setspace}
+\onehalfspacing										% Задание межстрочного итервала = 1.5
+
+\usefont{T2A}{ftm}{m}{sl}							% Задание шрифта Times New Roman 
+													% (еще раз на всякий случай)
+													
+\setlength{\parindent}{12.5mm}						% Установка отступов красной строки
+\setlength{\jot}{2ex}
+
+% Установка размера шрифта для глав и подразделов
+\titleformat{\chapter}{\centering\normalfont\fontsize{16}{15}\bfseries\filcenter}{\thechapter}{1em}{}
+\titleformat{\section}{\centering\normalfont\fontsize{16}{15}\bfseries\filcenter}{\thesection}{1em}{}
+\titleformat{\subsection}[block]{\centering\normalfont\fontsize{16}{15}\bfseries\filcenter}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[block]{\centering\normalfont\fontsize{16}{15}\filcenter}{\thesubsubsection}{1em}{}
+
+% Задание отступов перед заголовками и после
+\titlespacing{\chapter}{\parindent}{0mm}{7.5mm}
+\titlespacing{\section}{\parindent}{9mm}{4.5mm}
+\titlespacing{\subsection}{\parindent}{9mm}{4.5mm}
+\titlespacing{\subsubsection}{\parindent}{9mm}{4.5mm}
+
+% Заменить "рис." на "рисунок"
+\usepackage{caption}
+\DeclareCaptionLabelSeparator{bar}{\space---\space}
+\captionsetup{labelsep=bar}
+\addto\captionsrussian
+{
+	\def\figurename{Рисунок}
+	\def\bibname{\normalsize СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+	\def\contentsname{\normalsize СОДЕРЖАНИЕ}
+}
