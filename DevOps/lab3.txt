@@ -1,4 +1,8 @@
 Lab3:
+http://176.118.165.63:9091/graph?g0.expr=node_load1&g0.tab=0&g0.stacked=0&g0.show_exemplars=0&g0.range_input=1d
+http://176.118.165.63:9091/graph?g0.expr=nginx_state&g0.tab=0&g0.stacked=0&g0.show_exemplars=0&g0.range_input=1d
+http://176.118.165.63:3001
+
 */1 * * * * /home/user/monitoring_scripts/monitor_prometheus.sh
 */1 * * * * sleep 10; /home/user/monitoring_scripts/monitor_prometheus.sh
 */1 * * * * sleep 20; /home/user/monitoring_scripts/monitor_prometheus.sh
