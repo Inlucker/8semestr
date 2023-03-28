@@ -1,4 +1,7 @@
 function lab_04
+    close all;
+    clear;
+    clc;
     % Input parameters
     sigma = 0.5;
 

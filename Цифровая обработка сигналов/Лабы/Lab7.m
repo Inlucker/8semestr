@@ -1,4 +1,7 @@
 function lab_07()
+    close all;
+    clear;
+    clc;
     A = 1.0;
     s1 = 1.0;
     s2 = 2.0;
