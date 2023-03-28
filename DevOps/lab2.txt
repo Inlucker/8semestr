@@ -1,0 +1,206 @@
+SSH user@176.118.165.63 -p 5622
+
+TaXpqb9cV
+
+sudo bash -l
+
+TaXpqb9cV
+
+cd /etc/systemd/
+
+mc
+
+
+MY:
+sudo -i
+
+cd /home/user/builds/LT7M2yC2/0/pas18u448/devops/nginx/static
+
+ssh root@192.168.3.57
+cd /usr/share/nginx/html
+
+$CI_PROJECT_DIR = /home/user/builds/LT7M2yC2/0/pas18u448/devops
+
+scp -r /home/user/builds/LT7M2yC2/0/pas18u448/devops/nginx/static/* user@192.168.3.57:/home/user/html
+
+convert ./image.jpeg -bordercolor black -border 3 -background black -fill white -pointsize 24 label:"'HERE'" -bordercolor black -border 10 -gravity South -append -bordercolor black -border 10 ./image2.jpeg
+
+convert ./image.jpeg -bordercolor black -border 3 -background black -fill white -pointsize 24 -font 'URWGothic-DemiOblique' label:"'HERE'" -bordercolor black -border 10 -gravity South -append -bordercolor black -border 10 ./image2.jpeg
+
+convert ./image.jpeg -bordercolor black -border 5 -background black -fill white -pointsize 32 -font 'C059-Bold' label:"'test'" -bordercolor red -border 10 -gravity South -append ./bmstu_converted.png
+
+convert ./MAP.jpg -bordercolor black -border 5 -background black -fill white -pointsize 32 -font 'C059-Bold' label:"'$CI_COMMIT_AUTHOR'" -bordercolor red -border 10 -gravity South -append ./bmstu_converted.png
+
+ALL:
+
+Microsoft Windows [Version 10.0.22621.1265]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+C:\Users\arsen>SSH 176.118.165.63 5722
+ssh: connect to host 176.118.165.63 port 22: Connection refused
+
+C:\Users\arsen>SSH 176.118.165.63 5622
+ssh: connect to host 176.118.165.63 port 22: Connection refused
+
+C:\Users\arsen>SSH 176.118.165.63 -P5622
+unknown option -- 5
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command]
+
+C:\Users\arsen>SSH 176.118.165.63 -p 5622
+The authenticity of host '[176.118.165.63]:5622 ([176.118.165.63]:5622)' can't be established.
+ED25519 key fingerprint is SHA256:4ufLUebOcNqcro8qVQ3RCWxaZ5gen1mCwO92WkSNaVU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[176.118.165.63]:5622' (ED25519) to the list of known hosts.
+arsen@176.118.165.63's password:
+
+C:\Users\arsen>SSH user@176.118.165.63 -p 5622
+user@176.118.165.63's password:
+Welcome to Ubuntu 22.04 LTS (GNU/Linux 5.15.0-67-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Mar 16 14:20:57 UTC 2023
+
+  System load:  0.00048828125      Processes:              119
+  Usage of /:   10.3% of 28.89GB   Users logged in:        1
+  Memory usage: 18%                IPv4 address for ens15: 192.168.3.56
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+82 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+Last login: Thu Mar 16 12:56:53 2023
+user@1ronin7:~$
+user@1ronin7:~$
+user@1ronin7:~$
+user@1ronin7:~$
+user@1ronin7:~$
+user@1ronin7:~$
+user@1ronin7:~$
+user@1ronin7:~$
+user@1ronin7:~$
+user@1ronin7:~$ sudo bash -l
+[sudo] password for user:
+root@1ronin7:/home/user#
+root@1ronin7:/home/user#
+root@1ronin7:/home/user#
+root@1ronin7:/home/user#
+root@1ronin7:/home/user#
+root@1ronin7:/home/user#
+root@1ronin7:/home/user#
+root@1ronin7:/home/user#
+root@1ronin7:/home/user#
+root@1ronin7:/home/user#
+root@1ronin7:/home/user#
+root@1ronin7:/home/user#
+root@1ronin7:/home/user# cd /etc/systemd/
+network/ system/  user/
+root@1ronin7:/home/user# cd /etc/systemd/
+network/ system/  user/
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../1-libssh2-1_1.10.0-3_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.10.0-3) ...
+Selecting previously unselected package mailcap.
+Preparing to unpack .../2-mailcap_3.70+nmu1ubuntu1_all.deb ...
+Unpacking mailcap (3.70+nmu1ubuntu1) ...
+Selecting previously unselected package mc-data.
+Preparing to unpack .../3-mc-data_3%3a4.8.27-1_all.deb ...
+Unpacking mc-data (3:4.8.27-1) ...
+Selecting previously unselected package mc.
+Preparing to unpack .../4-mc_3%3a4.8.27-1_amd64.deb ...
+Unpacking mc (3:4.8.27-1) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../5-mime-support_3.66_all.deb ...
+Unpacking mime-support (3.66) ...
+Selecting previously unselected package unzip.
+Preparing to unpack .../6-unzip_6.0-26ubuntu3.1_amd64.deb ...
+Unpacking unzip (6.0-26ubuntu3.1) ...
+Setting up unzip (6.0-26ubuntu3.1) ...
+Setting up bzip2 (1.0.8-5build1) ...
+Setting up mc-data (3:4.8.27-1) ...
+Setting up libssh2-1:amd64 (1.10.0-3) ...
+Setting up mailcap (3.70+nmu1ubuntu1) ...
+Setting up mime-support (3.66) ...
+Setting up mc (3:4.8.27-1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3) ...
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@1ronin7:/etc/systemd# mc
+
+Select an editor.  To change later, run 'select-editor'.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/vim.basic
+  3. /usr/bin/mcedit
+  4. /usr/bin/vim.tiny
+  5. /bin/ed
+
+Choose 1-5 [1]: 3
+
+
+root@1ronin7:/etc/systemd#
+root@1ronin7:/etc/systemd#
+root@1ronin7:/etc/systemd#
+root@1ronin7:/etc/systemd#
+root@1ronin7:/etc/systemd# systemctl restart gitlab-runner
+Warning: The unit file, source configuration file or drop-ins of gitlab-runner.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+root@1ronin7:/etc/systemd# systemctl daemon-reload
+root@1ronin7:/etc/systemd# systemctl restart gitlab-runner
+root@1ronin7:/etc/systemd# systemctl status  gitlab-runner
+● gitlab-runner.service - GitLab Runner
+     Loaded: loaded (/etc/systemd/system/gitlab-runner.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2023-03-16 14:23:23 UTC; 5s ago
+   Main PID: 4311 (gitlab-runner)
+      Tasks: 7 (limit: 2204)
+     Memory: 11.2M
+        CPU: 100ms
+     CGroup: /system.slice/gitlab-runner.service
+             └─4311 /usr/bin/gitlab-runner run --working-directory /home/user --config /etc/gitlab-runner/config.toml ->
+
+Mar 16 14:23:23 1ronin7 systemd[1]: Started GitLab Runner.
+Mar 16 14:23:23 1ronin7 gitlab-runner[4311]: Runtime platform                                    arch=amd64 os=linux pi>
+Mar 16 14:23:23 1ronin7 gitlab-runner[4311]: Starting multi-runner from /etc/gitlab-runner/config.toml...  builds=0
+Mar 16 14:23:23 1ronin7 gitlab-runner[4311]: Running in system-mode.
+Mar 16 14:23:23 1ronin7 gitlab-runner[4311]:
+Mar 16 14:23:23 1ronin7 gitlab-runner[4311]: Configuration loaded                                builds=0
+Mar 16 14:23:23 1ronin7 gitlab-runner[4311]: listen_address not defined, metrics & debug endpoints disabled  builds=0
+Mar 16 14:23:23 1ronin7 gitlab-runner[4311]: [session_server].listen_address not defined, session endpoints disabled  b>
+Mar 16 14:23:23 1ronin7 gitlab-runner[4311]: Initializing executor providers                     builds=0
+root@1ronin7:/etc/systemd# ps axvf  | greb gitlab
+Command 'greb' not found, did you mean:
+  command 'grex' from snap grex (v1.4.0)
+  command 'grep' from deb grep (3.7-1build1)
+See 'snap info <snapname>' for additional versions.
+root@1ronin7:/etc/systemd# ps axvf  | grep gitlab
+   4333 pts/2    S+     0:00      0   130  6873  2168  0.1                          \_ grep --color=auto gitlab
+   4311 ?        Ssl    0:00      0 23320 731687 42100  2.1 /usr/bin/gitlab-runner run --working-directory /home/user --config /etc/gitlab-runner/config.toml --service gitlab-runner --user root
+root@1ronin7:/etc/systemd# mcedit /etc/sudoers
+
+root@1ronin7:/etc/systemd# client_loop: send disconnect: Connection reset
+
+C:\Users\arsen>

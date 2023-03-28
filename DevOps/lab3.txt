@@ -1,0 +1,125 @@
+Lab3:
+*/1 * * * * /home/user/monitoring_scripts/monitor_prometheus.sh
+*/1 * * * * sleep 10; /home/user/monitoring_scripts/monitor_prometheus.sh
+*/1 * * * * sleep 20; /home/user/monitoring_scripts/monitor_prometheus.sh
+*/1 * * * * sleep 30; /home/user/monitoring_scripts/monitor_prometheus.sh
+*/1 * * * * sleep 40; /home/user/monitoring_scripts/monitor_prometheus.sh
+*/1 * * * * sleep 50; /home/user/monitoring_scripts/monitor_prometheus.sh
+
+WORKS:
+cat /etc/alertmanager/alertmanager.yml
+nano /etc/alertmanager/alertmanager.yml
+route:
+  group_by: ['alertname', 'instance', 'severity']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 1h
+  receiver: 'telepush'
+
+receivers:
+- name: 'telepush'
+  webhook_configs:
+  - url: 'https://telepush.dev/api/inlets/alertmanager/03a343'
+
+
+cat /etc/prometheus/alerts.yml
+nano /etc/prometheus/alerts.yml
+groups:
+- name: Critical alers
+  rules:
+  - alert: InstanceDown
+    expr: nginx_state == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      description: '{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minute.'
+      summary: Instance {{ $labels.instance }} downestart=on-failure
+
+
+SHOULD WORK:
+cat /etc/alertmanager/alertmanager.yml
+nano /etc/alertmanager/alertmanager.yml
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 1h
+  receiver: 'telepush'
+  
+receivers:
+  - name: 'telepush'
+    webhook_configs:
+    - url: 'https://telepush.dev/api/inlets/alertmanager/03a343'
+    
+    
+cat /etc/prometheus/alerts.yml
+nano /etc/prometheus/alerts.yml
+groups:
+- name: example
+  rules:
+  - alert: NginxDown
+    expr: nginx_state == 0
+    annotations:
+      description: 'nginx down on {{ $labels.instance }}'
+      summary: nginx down on {{ $labels.instance }}
+      
+      
+cat /etc/prometheus/prometheus.yml
+nano /etc/prometheus/prometheus.yml
+global:
+  scrape_interval:     5s
+  evaluation_interval: 5s
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+       - localhost:9093
+
+scrape_configs:
+  - job_name: 'node'
+    static_configs:
+    - targets:
+       - localhost:9100
+       - 192.168.3.57:9100
+
+rule_files:
+  - "alerts.yml"
+
+systemctl restart alertmanager
+systemctl status alertmanager
+
+systemctl restart prometheus
+systemctl status prometheus
+
+systemctl stop nginx
+systemctl status nginx
+
+systemctl start nginx
+
+stress -c 1 -i 2
+
+ab -c 10 -n 100000 http://localhost/
+ab -c 100 -n 10000000 http://localhost/
+
+
+Lab2:
+SSH user@176.118.165.63 -p 5622
+
+TaXpqb9cV
+
+sudo bash -l
+
+TaXpqb9cV
+
+cd /etc/systemd/
+
+mc
+
+
+MY:
+sudo -i
+
+ssh root@192.168.3.57
