@@ -24,7 +24,7 @@ function lab_07()
 
     figure(1);
     plot(t, u1+n1, "b", t, u2+n2,"g", t, abs(ifft(fft(u2+n2) .* tikhonfilt(v1, v2, step, 2 * mult, delta, epsilon))),"m");
-    legend('Поврежденный сигнал 1','Поврежденный сигнал 2','Фильтр сигнала');
+    legend('Неискаженный сигнал','Искаженный сигнал','Фильтр сигнала');
 end
 
 function h = tikhonfilt(u1, u2, step, T, d, e)
