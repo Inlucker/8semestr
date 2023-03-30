@@ -1,6 +1,6 @@
 Lab3:
-http://176.118.165.63:9091/graph?g0.expr=node_load1&g0.tab=0&g0.stacked=0&g0.show_exemplars=0&g0.range_input=1d
-http://176.118.165.63:9091/graph?g0.expr=nginx_state&g0.tab=0&g0.stacked=0&g0.show_exemplars=0&g0.range_input=1d
+http://176.118.165.63:9091/graph?g0.expr=node_load1&g0.tab=0&g0.stacked=0&g0.show_exemplars=0&g0.range_input=2d
+http://176.118.165.63:9091/graph?g0.expr=nginx_state&g0.tab=0&g0.stacked=0&g0.show_exemplars=0&g0.range_input=2d
 http://176.118.165.63:3001
 
 */1 * * * * /home/user/monitoring_scripts/monitor_prometheus.sh
@@ -103,9 +103,10 @@ systemctl status nginx
 
 systemctl start nginx
 
+VM2:
 stress -c 1 -i 2
 
-ab -c 10 -n 100000 http://localhost/
+VM1:
 ab -c 100 -n 10000000 http://localhost/
 
 
