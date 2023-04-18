@@ -2,14 +2,16 @@ function lab_09()
     close all;
     clear;
     clc;
-    I=double(imread('bimage2.bmp')) / 255;
+    I=double(imread('bimage1.bmp')) / 255;
 
     figure;
     imshow(I); 
     title('Source image');
 
     PSF=fspecial('motion', 55, 205);
-    % PSF=fspecial('motion', 54, 65);
+%     PSF=fspecial('motion', 55, 205);
+%     PSF=fspecial('motion', 54, 65);
+%     PSF=fspecial('motion', 54, 66); %hackfeed
     [J1 P1]=deconvblind(I, PSF);
     figure;
     imshow(J1);
