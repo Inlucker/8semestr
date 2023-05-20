@@ -36,14 +36,14 @@
 
 На рисунке \ref{generateCandidates} представлена блок-схема данного этапа.
 
-\subsection{Подсчет поддержки кандидатов}
-
-После получения списка кандидатов, нужно определить какие последовательности удовлетворяют заданному минимальному уровню поддержки, а какие нет. Для этого необходимо для каждого кандидата определить кол-во сессий поддерживающих его. На рисунке \ref{sessionSupportsSequence} приведена схема проверки поддержки кандидата сессией.
+%\subsection{Подсчет поддержки кандидатов}
+%
+%После получения списка кандидатов, нужно определить какие последовательности удовлетворяют заданному минимальному уровню поддержки, а какие нет. Для этого необходимо для каждого кандидата определить кол-во сессий поддерживающих его. На рисунке \ref{sessionSupportsSequence} приведена схема проверки поддержки кандидата сессией.
 
 \newpage
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\textwidth]{inc/img/generateCandidates.drawio.pdf}
+	\includegraphics[width=0.8\textwidth]{inc/img/generateCandidates.drawio.pdf}
 	\caption{Генерация кандидатов}
 	\label{generateCandidates}
 \end{figure}
@@ -55,17 +55,40 @@
 %	\label{countSupport}
 %\end{figure}
 
+\newpage
+\subsection{Подсчет поддержки кандидатов}
+
+После получения списка кандидатов, нужно определить какие последовательности удовлетворяют заданному минимальному уровню поддержки, а какие нет. Для этого необходимо для каждого кандидата определить кол-во сессий поддерживающих его. На рисунке \ref{sessionSupportsSequence} приведена схема проверки поддержки кандидата сессией.
+
 %\newpage
-%\subsection{Подсчет поддержки кандидатов}
-%
-%После получения списка кандидатов, нужно определить какие последовательности удовлетворяют заданному минимальному уровню поддержки, а какие нет. Для этого необходимо для каждого кандидата определить кол-во сессий поддерживающих его. На рисунке \ref{sessionSupportsSequence} приведена схема проверки поддержки кандидата сессией.
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.7\textwidth]{inc/img/sessionSupportsSequence.drawio.pdf}
+%	\caption{Проверка поддержки кандидата сессией}
+%	\label{sessionSupportsSequence}
+%\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{inc/img/sessionSupportsSequence2.drawio.pdf}
+	\caption{Проверка поддержки кандидата сессией, часть 1}
+	\label{sessionSupportsSequence}
+\end{figure}
 
 \newpage
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\textwidth]{inc/img/sessionSupportsSequence.drawio.pdf}
-	\caption{Проверка поддержки кандидата сессией}
-	\label{sessionSupportsSequence}
+	\includegraphics[width=0.8\textwidth]{inc/img/forward_phase2.drawio.pdf}
+	\caption{Проверка поддержки кандидата сессией, часть 2}
+	\label{forward_phase}
+\end{figure}
+
+\newpage
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{inc/img/backward_phase2.drawio.pdf}
+	\caption{Проверка поддержки кандидата сессией, часть 3}
+	\label{backward_phase}
 \end{figure}
 
 \newpage
