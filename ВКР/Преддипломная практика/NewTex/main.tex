@@ -1,0 +1,31 @@
+	\documentclass[utf8x, 14pt]{G7-32} % Стиль (по умолчанию будет 14pt)
+
+\include{preamble.inc}
+
+
+\ifPDFTeX
+\include{listings.inc}
+%\include{listingsSQL}
+\else
+\usepackage{local-minted}
+\fi
+
+\include{macros.inc}
+
+\begin{document}
+	%\include{title}
+	\setcounter{page}{3}
+%	\include{essay}
+%	\StructuredChapter{Реферат}
+	\tableofcontents
+%	\include{shortcuts}
+	\include{intro}
+%	\include{analysis}
+	\include{design}
+%	\include{technology}
+%	\include{research}
+	\include{conclusion}
+	\include{another_biblio}
+	\include{additions}
+
+\end{document}
